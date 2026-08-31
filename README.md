@@ -1,9 +1,9 @@
-# 주식 사주 개인정보처리방침
+# 주식사주 개인정보처리방침
 
 **최종 수정일: 2026년 8월 31일**
 
-무당 스튜디오(이하 "개발자")가 만든 안드로이드 앱 **주식 사주**(패키지 이름
-`com.dalcomsoft.stock`, 이하 "앱")의 개인정보 처리 방침입니다.
+무당 스튜디오(이하 "개발자")가 만든 안드로이드 앱 **주식사주**(패키지 이름
+`com.mudangstudio.stocksaju`, 이하 "앱")의 개인정보 처리 방침입니다.
 
 웹에서 보기: <https://ted19.github.io/stocksaju-privacy/>
 
@@ -11,7 +11,7 @@
 
 ## 한 줄 요약
 
-**주식 사주는 개인정보를 수집하지 않습니다.** 회원가입도, 개발자가 운영하는
+**주식사주는 개인정보를 수집하지 않습니다.** 회원가입도, 개발자가 운영하는
 서버도, 광고도, 분석 도구도 없습니다. 앱이 인터넷에 접속하는 것은
 금융감독원·금융위원회·한국거래소가 공개한 공시와 시세를 내려받을 때뿐이며,
 그때도 사용자를 식별하는 정보는 보내지 않습니다.
@@ -119,8 +119,8 @@ Analytics, Firebase, 광고 SDK, 크래시 리포트 도구 등 사용자 행동
 
 **Last updated: August 31, 2026**
 
-This is the privacy policy for **Stock Saju** (Korean title 주식 사주, package
-`com.dalcomsoft.stock`), an Android app by Mudang Studio.
+This is the privacy policy for **Stock Saju** (Korean title 주식사주, package
+`com.mudangstudio.stocksaju`), an Android app by Mudang Studio.
 
 **Stock Saju does not collect any personal information.** There are no accounts,
 no developer-operated servers, no ads, and no analytics. The app connects to the
