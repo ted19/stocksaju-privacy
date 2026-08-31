@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>주식 사주 - Stock Saju</title>
+  <style>
+    :root {
+      --paper: #F7F4EE;
+      --card: #FFFDF9;
+      --ink: #1E1B16;
+      --ink-soft: #6B6355;
+      --rule: #DDD5C7;
+      --navy: #23304A;
+      --gold: #A98B3C;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --paper: #141210;
+        --card: #1E1B17;
+        --ink: #EDE7DC;
+        --ink-soft: #A79C8B;
+        --rule: #3A342B;
+        --navy: #B8C6E4;
+        --gold: #C9A227;
+      }
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Malgun Gothic', sans-serif;
+      background: var(--paper);
+      color: var(--ink);
+      line-height: 1.7;
+    }
+    .container { max-width: 640px; margin: 0 auto; padding: 72px 20px 48px; }
+    .mark { width: 48px; height: 2px; background: var(--gold); margin: 0 auto 28px; }
+    h1 {
+      font-family: 'Noto Serif CJK KR', 'Noto Serif KR', 'Apple SD Gothic Neo', serif;
+      font-size: 30px;
+      font-weight: 600;
+      text-align: center;
+      letter-spacing: 0.1em;
+      margin-bottom: 10px;
+    }
+    .subtitle { text-align: center; color: var(--ink-soft); font-size: 14px; margin-bottom: 10px; }
+    .note { text-align: center; color: var(--ink-soft); font-size: 13px; margin-bottom: 40px; }
+    .links { display: flex; justify-content: center; gap: 14px; flex-wrap: wrap; }
+    .links a {
+      color: var(--navy);
+      text-decoration: none;
+      font-size: 15px;
+      padding: 11px 24px;
+      background: var(--card);
+      border: 1px solid var(--rule);
+      border-radius: 4px;
+      transition: border-color 0.15s, color 0.15s;
+    }
+    .links a:hover { border-color: var(--gold); color: var(--gold); }
+    .footer {
+      text-align: center;
+      color: var(--ink-soft);
+      font-size: 12px;
+      margin-top: 48px;
+      padding-top: 20px;
+      border-top: 1px solid var(--rule);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="mark"></div>
+    <h1>주식 사주</h1>
+    <p class="subtitle">공시 재무로 종목을 뜯어보고, 타로와 주역으로 오늘의 마음가짐을 본다</p>
+    <p class="note">개인정보를 수집하지 않습니다. 모든 기록은 기기 안에만 남습니다.</p>
+    <div class="links">
+      <a href="privacy.html">개인정보처리방침</a>
+      <a href="privacy.html#en">Privacy Policy</a>
+    </div>
+    <div class="footer">&copy; 2026 무당 스튜디오 · Mudang Studio</div>
+  </div>
+</body>
+</html>

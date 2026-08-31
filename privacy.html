@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>개인정보처리방침 - 주식 사주</title>
+  <style>
+    :root {
+      --paper: #F7F4EE;
+      --card: #FFFDF9;
+      --ink: #1E1B16;
+      --ink-soft: #6B6355;
+      --rule: #DDD5C7;
+      --navy: #23304A;
+      --gold: #A98B3C;
+      --lead-bg: rgba(169, 139, 60, 0.08);
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --paper: #141210;
+        --card: #1E1B17;
+        --ink: #EDE7DC;
+        --ink-soft: #A79C8B;
+        --rule: #3A342B;
+        --navy: #B8C6E4;
+        --gold: #C9A227;
+        --lead-bg: rgba(201, 162, 39, 0.10);
+      }
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Malgun Gothic', sans-serif;
+      background: var(--paper);
+      color: var(--ink);
+      line-height: 1.8;
+    }
+    .container { max-width: 700px; margin: 0 auto; padding: 40px 20px 56px; }
+    h1 {
+      font-family: 'Noto Serif CJK KR', 'Noto Serif KR', 'Apple SD Gothic Neo', serif;
+      font-size: 25px;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      margin-bottom: 6px;
+    }
+    .date { color: var(--ink-soft); font-size: 13px; margin-bottom: 24px; }
+    .lead {
+      background: var(--lead-bg);
+      border-left: 2px solid var(--gold);
+      border-radius: 0 4px 4px 0;
+      padding: 16px 18px;
+      margin-bottom: 30px;
+      font-size: 14px;
+    }
+    h2 {
+      font-family: 'Noto Serif CJK KR', 'Noto Serif KR', 'Apple SD Gothic Neo', serif;
+      font-size: 17px;
+      font-weight: 600;
+      margin: 30px 0 8px;
+      padding-top: 14px;
+      border-top: 1px solid var(--rule);
+    }
+    p { margin-bottom: 12px; font-size: 14px; }
+    ul { margin: 0 0 12px 18px; font-size: 14px; }
+    li { margin-bottom: 6px; }
+    .table-wrap { overflow-x: auto; margin-bottom: 14px; }
+    table { width: 100%; border-collapse: collapse; font-size: 13px; background: var(--card); }
+    th, td { text-align: left; padding: 9px 11px; border-bottom: 1px solid var(--rule); vertical-align: top; }
+    th { color: var(--gold); font-weight: 600; white-space: nowrap; }
+    code {
+      background: var(--card);
+      border: 1px solid var(--rule);
+      padding: 1px 5px;
+      border-radius: 3px;
+      font-size: 12.5px;
+    }
+    strong { font-weight: 600; }
+    a { color: var(--navy); }
+    .back { display: inline-block; margin-top: 32px; color: var(--navy); text-decoration: none; font-size: 14px; }
+    .back:hover { text-decoration: underline; }
+    .lang { display: flex; gap: 8px; margin-bottom: 22px; }
+    .lang button {
+      background: var(--card);
+      border: 1px solid var(--rule);
+      color: var(--ink-soft);
+      padding: 5px 14px;
+      border-radius: 3px;
+      cursor: pointer;
+      font-size: 12px;
+      font-family: inherit;
+    }
+    .lang button.active { border-color: var(--gold); color: var(--gold); }
+    .section { display: none; }
+    .section.active { display: block; }
+    .footer {
+      color: var(--ink-soft);
+      font-size: 12px;
+      margin-top: 44px;
+      padding-top: 20px;
+      border-top: 1px solid var(--rule);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="lang">
+      <button id="btn-ko" class="active" onclick="switchLang('ko')">한국어</button>
+      <button id="btn-en" onclick="switchLang('en')">English</button>
+    </div>
+
+    <!-- Korean -->
+    <div id="ko" class="section active">
+      <h1>개인정보처리방침</h1>
+      <p class="date">최종 수정일: 2026년 8월 31일</p>
+
+      <div class="lead">
+        <strong>주식 사주는 개인정보를 수집하지 않습니다.</strong>
+        회원가입도, 개발자가 운영하는 서버도, 광고도, 분석 도구도 없습니다.
+        앱이 인터넷에 접속하는 것은 금융감독원·금융위원회·한국거래소가 공개한
+        공시와 시세를 내려받을 때뿐이며, 그때도 사용자를 식별하는 정보는
+        보내지 않습니다.
+      </div>
+
+      <p>
+        무당 스튜디오(이하 "개발자")가 만든 안드로이드 앱
+        <strong>주식 사주</strong>(패키지 이름 <code>com.dalcomsoft.stock</code>,
+        이하 "앱")의 개인정보 처리 방침입니다.
+      </p>
+
+      <h2>1. 수집하는 개인정보</h2>
+      <p>
+        <strong>없습니다.</strong> 앱은 회원가입이 없고, 계정을 만들지 않으며,
+        이름·이메일·전화번호·생년월일·광고 식별자·위치 정보 등 어떤 정보도
+        수집하지 않습니다. 개발자가 운영하는 서버가 존재하지 않으므로 사용자의
+        정보를 전송받을 곳 자체가 없습니다.
+      </p>
+
+      <h2>2. 기기에 저장되는 정보</h2>
+      <p>
+        앱은 아래 정보를 <strong>사용자 기기 내부 저장소에만</strong>
+        보관합니다. 이 정보는 기기를 떠나지 않으며 개발자에게 전송되지 않습니다.
+      </p>
+      <div class="table-wrap">
+        <table>
+          <tr><th>저장 항목</th><td>내용</td></tr>
+          <tr><th>관심종목</th><td>사용자가 추가한 종목 코드와 추가한 시각</td></tr>
+          <tr><th>공시·재무 자료</th><td>조회한 기업의 공개 재무제표, 지분공시, 일별 시세</td></tr>
+          <tr><th>종목 목록</th><td>공시 대상 법인의 이름과 종목 코드 (공개 자료)</td></tr>
+          <tr><th>지난 기록</th><td>뽑은 타로 카드, 주역 동전 결과, 분석 결과 (최대 200건, 넘으면 오래된 것부터 지워집니다)</td></tr>
+          <tr><th>프로필</th><td>사용자가 직접 입력한 별칭(선택 사항)과 투자 성향(공격적·중립·보수적)</td></tr>
+          <tr><th>오픈API 인증키</th><td>사용자가 각 기관에서 직접 발급받아 입력한 인증키</td></tr>
+        </table>
+      </div>
+      <p>
+        인증키는 다른 자료와 달리 <strong>안드로이드 키스토어로 암호화되는 보안
+        저장소</strong>에 따로 보관하며, 한 번 입력한 뒤에는 화면에 다시 꺼내
+        보여주지 않습니다. 앱 설치 파일이나 로그에도 남기지 않습니다.
+      </p>
+
+      <h2>3. 앱이 접속하는 곳</h2>
+      <p>앱은 아래 세 곳의 공개 API에만 접속합니다.</p>
+      <div class="table-wrap">
+        <table>
+          <tr><th>주소</th><td>제공 기관</td><td>용도</td></tr>
+          <tr><th><code>opendart.fss.or.kr</code></th><td>금융감독원 DART 오픈API</td><td>공시 재무제표, 지분공시</td></tr>
+          <tr><th><code>apis.data.go.kr</code></th><td>공공데이터포털 (금융위원회 주식시세정보)</td><td>일별 시세</td></tr>
+          <tr><th><code>data-dbg.krx.co.kr</code></th><td>한국거래소</td><td>일별 시세 (금융위 대신 쓸 수 있는 경로)</td></tr>
+        </table>
+      </div>
+      <p>
+        요청에 담기는 것은 <strong>사용자가 입력한 인증키와 조회할 종목·법인
+        코드뿐</strong>입니다. 별칭, 투자 성향, 지난 기록, 관심종목 목록은
+        어디로도 나가지 않습니다.
+      </p>
+      <p>
+        각 기관은 요청을 처리하면서 자체 정책에 따라 인증키별 이용 내역을 남길
+        수 있습니다. 이는 사용자가 해당 기관에서 직접 발급받은 인증키에 대한
+        일이며, 각 기관의 이용약관과 개인정보 처리방침을 따릅니다.
+      </p>
+
+      <h2>4. 제3자 제공 및 위탁</h2>
+      <p>
+        <strong>없습니다.</strong> 앱은 어떤 정보도 제3자에게 제공하거나 처리를
+        위탁하지 않습니다.
+      </p>
+
+      <h2>5. 광고 및 분석 도구</h2>
+      <p>
+        앱에는 <strong>광고가 없으며, 분석·추적 도구를 사용하지
+        않습니다.</strong> Google Analytics, Firebase, 광고 SDK, 크래시 리포트
+        도구 등 사용자 행동을 수집하는 어떤 외부 도구도 포함되어 있지 않습니다.
+      </p>
+
+      <h2>6. 앱이 요청하는 권한</h2>
+      <p>
+        <code>INTERNET</code> 한 가지뿐이며, 위 3항의 공개 API에 접속하는 데에만
+        씁니다. 카메라, 연락처, 위치, 저장소, 마이크 등 다른 어떤 권한도 요청하지
+        않습니다.
+      </p>
+
+      <h2>7. 정보의 삭제</h2>
+      <p>사용자는 언제든 저장된 정보를 앱 안에서 직접 지울 수 있습니다.</p>
+      <ul>
+        <li><strong>관심종목</strong> — 목록의 카드마다 있는 휴지통 단추</li>
+        <li><strong>기록 하나씩</strong> — 기록 화면에서 항목마다 "이 기록 지우기"</li>
+        <li><strong>기록 종류별·전체</strong> — 기록 화면의 "기록 전체 지우기"</li>
+        <li><strong>인증키</strong> — 인증키 화면에서 항목마다 "삭제"</li>
+        <li><strong>별칭</strong> — 프로필 화면에서 입력란을 비우고 저장</li>
+        <li><strong>전부</strong> — 앱을 삭제하면 위 모든 정보가 기기에서 함께 제거됩니다</li>
+      </ul>
+      <p>
+        앱이 정보를 외부에 보관하지 않으므로, 개발자에게 삭제를 요청할 대상 자체가
+        없습니다.
+      </p>
+
+      <h2>8. 아동의 개인정보</h2>
+      <p>
+        앱은 만 14세 미만 아동을 대상으로 하지 않습니다. 앱이 어떤 정보도 수집하지
+        않으므로 아동으로부터 수집되는 정보 또한 없습니다.
+      </p>
+
+      <h2>9. 투자에 관한 고지</h2>
+      <p>
+        앱이 보여주는 점수와 해설은 공개된 공시·시세 자료를 가공한 참고 자료이며,
+        타로와 주역은 재미로 보는 것입니다. <strong>어느 쪽도 투자 자문이 아니며
+        투자 판단의 근거로 쓰기 위한 것이 아닙니다.</strong> 투자의 책임은
+        사용자 본인에게 있습니다.
+      </p>
+
+      <h2>10. 방침의 변경</h2>
+      <p>
+        이 방침이 바뀌면 이 문서를 갱신하고 최종 수정일을 바꿉니다. 수집 항목이
+        새로 생기는 등 중요한 변경이 있을 경우 앱 업데이트 내용에도 함께
+        알립니다.
+      </p>
+
+      <h2>11. 문의</h2>
+      <p>개인정보 처리에 관한 문의는 아래로 연락해 주세요.</p>
+      <ul>
+        <li>개발자: 무당 스튜디오</li>
+        <li>이메일: <a href="mailto:adinfototo@gmail.com">adinfototo@gmail.com</a></li>
+      </ul>
+
+      <a class="back" href="index.html">&larr; 돌아가기</a>
+      <div class="footer">&copy; 2026 무당 스튜디오</div>
+    </div>
+
+    <!-- English -->
+    <div id="en" class="section">
+      <h1>Privacy Policy</h1>
+      <p class="date">Last updated: August 31, 2026</p>
+
+      <div class="lead">
+        <strong>Stock Saju does not collect any personal information.</strong>
+        There are no accounts, no developer-operated servers, no ads, and no
+        analytics. The app connects to the internet only to download public
+        disclosure and market data published by Korean financial authorities,
+        and those requests carry nothing that identifies you.
+      </div>
+
+      <p>
+        This is the privacy policy for <strong>Stock Saju</strong> (Korean title
+        주식 사주, package <code>com.dalcomsoft.stock</code>), an Android app by
+        Mudang Studio ("the developer").
+      </p>
+
+      <h2>1. Information we collect</h2>
+      <p>
+        <strong>None.</strong> The app has no sign-up and creates no account. It
+        does not collect your name, email address, phone number, date of birth,
+        advertising identifier, or location. The developer operates no server, so
+        there is nowhere for your information to be sent.
+      </p>
+
+      <h2>2. Information stored on your device</h2>
+      <p>
+        The app keeps the following <strong>only in your device's local
+        storage</strong>. It never leaves your device and is never transmitted to
+        the developer.
+      </p>
+      <div class="table-wrap">
+        <table>
+          <tr><th>Item</th><td>Contents</td></tr>
+          <tr><th>Watchlist</th><td>Stock codes you added and when you added them</td></tr>
+          <tr><th>Disclosure &amp; financial data</th><td>Public financial statements, ownership disclosures, and daily prices for companies you looked up</td></tr>
+          <tr><th>Company list</th><td>Names and stock codes of listed companies (public data)</td></tr>
+          <tr><th>History</th><td>Tarot cards drawn, I Ching coin tosses, and analysis results (up to 200 entries; the oldest are dropped beyond that)</td></tr>
+          <tr><th>Profile</th><td>An optional nickname you type in, and an investment stance (aggressive, neutral, or conservative)</td></tr>
+          <tr><th>Open API keys</th><td>Keys you obtained yourself from each agency and entered into the app</td></tr>
+        </table>
+      </div>
+      <p>
+        Unlike the rest, API keys are held in <strong>secure storage encrypted by
+        the Android Keystore</strong>, and are never shown again once entered.
+        They are not written into the app package or its logs.
+      </p>
+
+      <h2>3. Where the app connects</h2>
+      <p>The app connects only to these three public APIs.</p>
+      <div class="table-wrap">
+        <table>
+          <tr><th>Host</th><td>Provider</td><td>Purpose</td></tr>
+          <tr><th><code>opendart.fss.or.kr</code></th><td>Financial Supervisory Service — DART Open API</td><td>Financial statements, ownership disclosures</td></tr>
+          <tr><th><code>apis.data.go.kr</code></th><td>data.go.kr (Financial Services Commission stock price data)</td><td>Daily prices</td></tr>
+          <tr><th><code>data-dbg.krx.co.kr</code></th><td>Korea Exchange</td><td>Daily prices (alternative source)</td></tr>
+        </table>
+      </div>
+      <p>
+        A request carries <strong>only the API key you entered and the stock or
+        corporation code being looked up</strong>. Your nickname, investment
+        stance, history, and watchlist never leave the device.
+      </p>
+      <p>
+        Each agency may log usage against your API key under its own policy. That
+        concerns a key you obtained directly from that agency and is governed by
+        that agency's terms of service and privacy policy.
+      </p>
+
+      <h2>4. Sharing and processing by third parties</h2>
+      <p>
+        <strong>None.</strong> The app does not share any information with third
+        parties, nor does it delegate processing to anyone.
+      </p>
+
+      <h2>5. Advertising and analytics</h2>
+      <p>
+        The app contains <strong>no ads and no analytics or tracking
+        tools.</strong> There is no Google Analytics, Firebase, advertising SDK,
+        or crash reporting library — nothing that collects your behaviour.
+      </p>
+
+      <h2>6. Permissions</h2>
+      <p>
+        <code>INTERNET</code> only, used solely to reach the public APIs listed in
+        section 3. The app requests no camera, contacts, location, storage, or
+        microphone permission.
+      </p>
+
+      <h2>7. Deleting your data</h2>
+      <p>You can delete anything the app stores, at any time, from inside the app.</p>
+      <ul>
+        <li><strong>Watchlist</strong> — the trash button on each card</li>
+        <li><strong>A single history entry</strong> — "delete this entry" on the history screen</li>
+        <li><strong>History by type, or all of it</strong> — "delete all history" on the history screen</li>
+        <li><strong>API keys</strong> — "delete" next to each key on the API key screen</li>
+        <li><strong>Nickname</strong> — clear the field on the profile screen and save</li>
+        <li><strong>Everything</strong> — uninstalling the app removes all of the above from your device</li>
+      </ul>
+      <p>
+        Because nothing is kept outside your device, there is no data held by the
+        developer for you to request deletion of.
+      </p>
+
+      <h2>8. Children's privacy</h2>
+      <p>
+        The app is not directed at children under 14. Since the app collects no
+        information at all, it collects none from children either.
+      </p>
+
+      <h2>9. Investment disclaimer</h2>
+      <p>
+        The scores and commentary the app shows are reference material derived
+        from public disclosure and market data, and the tarot and I Ching
+        features are for entertainment. <strong>Neither is investment advice, and
+        neither is intended as a basis for investment decisions.</strong> You are
+        responsible for your own investing.
+      </p>
+
+      <h2>10. Changes to this policy</h2>
+      <p>
+        If this policy changes, this document will be updated and the date above
+        revised. Material changes — such as newly collected data — will also be
+        noted in the app's release notes.
+      </p>
+
+      <h2>11. Contact</h2>
+      <ul>
+        <li>Developer: Mudang Studio</li>
+        <li>Email: <a href="mailto:adinfototo@gmail.com">adinfototo@gmail.com</a></li>
+      </ul>
+
+      <a class="back" href="index.html">&larr; Back</a>
+      <div class="footer">&copy; 2026 Mudang Studio</div>
+    </div>
+  </div>
+
+  <script>
+    function switchLang(lang) {
+      for (const id of ['ko', 'en']) {
+        document.getElementById(id).classList.toggle('active', id === lang);
+        document.getElementById('btn-' + id).classList.toggle('active', id === lang);
+      }
+      document.documentElement.lang = lang;
+    }
+    if (location.hash === '#en') switchLang('en');
+  </script>
+</body>
+</html>
