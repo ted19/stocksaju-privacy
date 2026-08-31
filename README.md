@@ -1,4 +1,4 @@
-# 주식 사주 개인정보처리방침
+# 주식사주 개인정보처리방침
 
 > **이 브랜치(`ads-revision`)는 아직 배포본이 아닙니다.**
 > 광고를 켠 버전을 스토어에 올리는 시점에 `main` 으로 병합하세요.
@@ -6,8 +6,8 @@
 
 **최종 수정일: 0000년 0월 0일 (광고 포함 버전 배포일로 교체)**
 
-무당 스튜디오(이하 "개발자")가 만든 안드로이드 앱 **주식 사주**(패키지 이름
-`com.dalcomsoft.stock`, 이하 "앱")의 개인정보 처리 방침입니다.
+무당 스튜디오(이하 "개발자")가 만든 안드로이드 앱 **주식사주**(패키지 이름
+`com.mudangstudio.stocksaju`, 이하 "앱")의 개인정보 처리 방침입니다.
 
 웹에서 보기: <https://ted19.github.io/stocksaju-privacy/>
 
@@ -161,8 +161,8 @@ Google 이 광고 목적으로 보관한 정보에 대한 요청은 Google 의 �
 
 **Last updated: (replace with the release date of the ad-enabled version)**
 
-This is the privacy policy for **Stock Saju** (Korean title 주식 사주, package
-`com.dalcomsoft.stock`), an Android app by Mudang Studio.
+This is the privacy policy for **Stock Saju** (Korean title 주식사주, package
+`com.mudangstudio.stocksaju`), an Android app by Mudang Studio.
 
 **The developer collects nothing. Google, however, collects an advertising
 identifier and related data to serve the banner ad at the bottom of the screen.**
