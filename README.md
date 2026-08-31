@@ -38,6 +38,7 @@
 | 종목 목록 | 공시 대상 법인의 이름과 종목 코드 (공개 자료) |
 | 지난 기록 | 뽑은 타로 카드, 주역 동전 결과, 분석 결과 (최대 200건, 넘으면 오래된 것부터 지워집니다) |
 | 프로필 | 사용자가 직접 입력한 별칭(선택 사항)과 투자 성향(공격적·중립·보수적) |
+| 보유 정보 | 사용자가 직접 입력한 평단가와 수량 (선택 사항) |
 | 오픈API 인증키 | 사용자가 각 기관에서 직접 발급받아 입력한 인증키 |
 
 인증키는 다른 자료와 달리 **안드로이드 키스토어로 암호화되는 보안 저장소**에
@@ -130,7 +131,8 @@ financial authorities, and those requests carry nothing that identifies you.
 The app stores the following **only in your device's local storage**: your
 watchlist, the public financial data it downloaded for companies you looked up,
 your reading history (tarot cards, I Ching coin tosses, and analysis results — up
-to 200 entries), an optional nickname, an investment stance, and the Open API keys
+to 200 entries), an optional nickname, an investment stance, an optional average
+purchase price and share count you type in yourself, and the Open API keys
 you obtained yourself and entered. API keys are held in secure storage encrypted
 by the Android Keystore and are never shown again once entered.
 
